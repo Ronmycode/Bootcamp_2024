@@ -1,0 +1,29 @@
+:root {
+  --rojo: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --Rose100: hsl(13, 31%, 94%);
+  --Rose50: hsl(20, 50%, 98%);
+}
+
+body {
+  background-color: var(--Rose100);
+}
+.rojo {
+  color: var(--rojo);
+}
+
+.btn_cart {
+  margin-top: -1rem !important;
+  border: 1px solid var(--rojo) !important;
+  /*   background-color: var(--Rose50);
+ */
+}
+
+.producto p {
+  margin: 0 0 !important;
+}
+
+.btn-primary {
+  background-color: var(--rojo) !important;
+  border: none !important;
+}
