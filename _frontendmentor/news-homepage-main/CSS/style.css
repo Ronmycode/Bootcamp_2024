@@ -3,7 +3,7 @@
   --Off-white: hsl(36, 100%, 99%);
   --Dark-grayish-blue: hsl(236, 13%, 42%);
   --Very-dark-blue: hsl(240, 100%, 5%);
-  --font1: ;
+  /* --font1: ; */
 }
 * {
   font-family: "Inter", sans-serif;
@@ -51,7 +51,6 @@ li a {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 1rem;
-    height: 5rem;
   }
 }
 
@@ -64,6 +63,30 @@ li a {
   grid-template-columns: 1fr 1fr;
 }
 
+/* ### Footer section ### */
+
+/* notes:
+  - I think I need to utilize CSS grid for the footer section
+  - Imgs on the left side and title, number, and article next to it
+
+*/
+footer {
+  padding-top: 3rem;
+  gap: 1rem;
+  display: flex;
+  height: 10rem;
+}
+
+footer article {
+  display: flex;
+}
+article .article_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ### Challenge code ### */
 /* coded with the challenge */
 .attribution {
   font-size: 11px;
