@@ -26,16 +26,11 @@
   color: var(--white);
   text-decoration: none;
   font-size: 14px;
-  /*  border: solid 2px red; */
+  /* border: solid 2px red; */
 }
 
 body {
   background-color: var(--DarkBlue1) !important;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-position-y: bottom;
-  background-image: url("https://res.cloudinary.com/dymsokiwr/image/upload/v1723372519/bg-curvy-mobile_j6tk63.svg");
 }
 
 /* #### Nav Bar #### */
@@ -53,49 +48,151 @@ nav img {
 header {
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: contain;
+  background-size: cover;
   background-position-y: center;
   background-image: url("https://res.cloudinary.com/dymsokiwr/image/upload/v1723372519/bg-curvy-mobile_j6tk63.svg");
 }
 header .header-img img {
   display: block;
   margin: auto;
-  max-width: 80%;
+  max-width: 75%;
 }
 .header-text__title {
-  /* background-color: var(--DarkBlue2); */
   font-family: var(--Font1);
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
 }
 .header-text__subTitle {
   font-family: var(--Font2);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .header-text__button {
-  width: 70%;
+  padding: 1rem 5rem !important;
+  margin: 3rem;
   border-radius: 50px !important;
   background-color: var(--Cyan) !important;
   border: none !important;
   font-weight: 600 !important;
 }
 
-/* Article section 2 */
-article img {
+@media (min-width: 768px) {
+  .header-text__title {
+    font-weight: 700;
+    font-size: 5rem;
+  }
+  .header-text__subTitle {
+    font-family: var(--Font2);
+    font-size: 3rem;
+  }
+  .header-text__button {
+    font-size: 1.5rem !important;
+    padding: 1.5rem 6rem !important;
+    margin: 3rem;
+  }
+}
+
+/* ##### Article Perks ##### */
+main {
+  background-color: var(--DarkBlue2);
+  max-width: 100%;
+}
+
+.article-perks {
+  padding: 2rem !important;
+}
+
+.article-perks__img {
+  padding: 2rem 0;
   display: block;
   margin: auto;
   max-width: 80%;
 }
+.article-perks__title {
+  font-family: var(--Font1);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
 
+.article-perks__text {
+  font-size: 1.2rem;
+}
+
+/* #### Side info #### */
+.aside-info {
+  padding: 5rem 1rem !important;
+  text-align: start;
+  display: flexbox;
+  align-items: center;
+}
+.aside-info img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  padding: 2rem 0rem;
+}
+.aside-info__title {
+  font-family: var(--Font1);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.aside-info__subTitle {
+  font-size: 1rem;
+}
+
+.aside-info__link a {
+  text-decoration: none;
+  color: var(--Cyan);
+}
+.aside-info__link i {
+  color: var(--Cyan);
+}
+.aside-info__link a {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .aside-info {
+    padding: 2rem !important;
+    text-align: start;
+    align-content: center;
+  }
+
+  .aside-info__title {
+    font-family: var(--Font1);
+    font-weight: 700;
+    font-size: 3rem;
+    padding-right: 20rem !important;
+  }
+  .aside-info__subTitle {
+    font-size: 1.5rem;
+  }
+}
+/* #### testimonials #### */
+.testimonials {
+  background-color: var(--DarkBlue2);
+}
 .testimonial-box {
   background-color: var(--DarkBlue4);
-  margin-bottom: 1.5rem;
+  margin: 1rem;
+  padding: 2rem 3rem !important;
+  font-size: 1rem;
+  border-radius: 8px;
 }
-/* challenge code */
-.attribution {
-  font-size: 11px;
-  text-align: center;
+
+.testimonial-box img {
+  border-radius: 50%;
+  max-width: 4.5rem;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+.testimonial-box__Profile1 p {
+  margin-bottom: 0 !important;
 }
+
+.testimonial-box__name {
+  font-weight: 700;
+}
+
+/* 
+.testimonial-box__jobTitle {
+  flex-direction: column;
+} */

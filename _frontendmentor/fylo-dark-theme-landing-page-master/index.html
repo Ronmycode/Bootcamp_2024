@@ -40,7 +40,7 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand container ">
+    <nav class="navbar navbar-expand container pt-2">
       <div class="container-fluid mx-3 py-4">
         <a class="navbar-brand" href="#">
           <img
@@ -63,83 +63,109 @@
           </ul>
       </div>
     </nav>
-    <!-- Hero Imge -->
-    <header>
-      <div class="header-img">
-        <img src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372521/illustration-intro_ufjdbc.png"
-        class="py-3" alt="Hero img">
-      </div>
-      <div class="header-text text-center m-4 ">
-        <p class="header-text__title px-sm-2 pb-4 mb-0">All your files in one secure location, accessible anywhere.</p>
-        <p class="header-text__subTitle px-3 mb-0">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
-        <button type="button" class="btn btn-primary btn-lg p-3 m-5 header-text__button">Get Started</button>
-      </div>
+    <!-- #### Hero Imge #### -->
+      <header class="">
+        <div class="header-img">
+          <img src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372521/illustration-intro_ufjdbc.png"
+          class="py-3" alt="Hero img">
+        </div>
+        <div class="header-text text-center container">
+          <p class="header-text__title px-sm-2 pb-4 mb-0">All your files in one secure location, accessible anywhere.</p>
+          <p class="header-text__subTitle px-3 mb-0">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+          <button type="button" class="btn btn-primary btn-lg header-text__button">Get Started</button>
+        </div>
       </header>
-    <main class="text-center row row-cols-md-2 g-6">
-      <!-- article 1 -->
-      <article class="">
-        <div class="article-perks col m-5">
-          <img class="article-perks__img" src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372519/icon-access-anywhere_qpdwmj.svg" alt="Access anywehre">
-          <p class="article-perks__title">aAccess you files, anywhere</p>
-          <p class="article-perks__text">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
-        </div>
-      </article>
-      <!-- article 2 -->
-      <article>
-        <div class="article-perks col m-5">
-          <img class="article-perks__img" src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372521/icon-security_netanx.svg" alt="Access anywehre">
-          <p class="article-perks__title">Security you can trust</p>
-          <p class="article-perks__text">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
-        </div>
-      </article>
-      <!-- article 3 -->
-      <article>
-        <div class="article-perks col m-5">
+    
+    
+    <!-- #### Article Perks #### -->
+    <main class="text-center">
+      <div class="row mx-0 justify-content-center grid gap-3 column-gap-3">
+        <!-- article 1 -->
+        <article class="article-perks col-md-4">
+            <img class="article-perks__img" src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372519/icon-access-anywhere_qpdwmj.svg" alt="Access anywehre">
+            <p class="article-perks__title">Access you files, anywhere</p>
+            <p class="article-perks__text">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+        </article>
+        <!-- article 2 -->
+          <article class="article-perks col-md-4">
+            <img class="article-perks__img" src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372521/icon-security_netanx.svg" alt="Access anywehre">
+            <p class="article-perks__title">Security you can trust</p>
+            <p class="article-perks__text">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+          </article>
+        
+        <!-- article 3 -->
+        <article class="article-perks col-md-4">
           <img class="article-perks__img" src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372520/icon-collaboration_fekiue.svg" alt="Access anywehre">
           <p class="article-perks__title">Real-time collaboration</p>
           <p class="article-perks__text">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-        </div>
-      </article>
-      <!-- article 4 -->
-      <article>
-        <div class="article-perks col m-5">
-          <img class="article-perks__img" src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372520/icon-any-file_rzzdfv.svg" alt="Access anywehre">
-          <p class="article-perks__title">Store any type of file</p>
-          <p class="article-perks__text">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared..</p>
-        </div>
-      </article>
-      
-      <article>
-        <img src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372522/illustration-stay-productive_l34foo.png" alt="Stay Productive">
-        <p>Stay productive, wherever you are</p>
-        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
-          <br>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
-        </p>
-        <a href="#">See how Fylo works <i class="fa-solid fa-circle-arrow-right"></i></a>
-      </article>
+        </article>
+        <!-- article 4 -->
+        <article class="article-perks col-md-4">
+            <img class="article-perks__img" src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372520/icon-any-file_rzzdfv.svg" alt="Access anywehre">
+            <p class="article-perks__title">Store any type of file</p>
+            <p class="article-perks__text">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared..</p>
+        </article>
+        
+        <!-- #### Side info #### -->
+        <aside class="aside-info row container">
+          <img src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372522/illustration-stay-productive_l34foo.png" alt="Stay Productive" 
+          class="col-md-6">
+          <div class="col-md-6 aside-info__text">
+            <p class="aside-info__title">Stay productive, wherever you are</p>
+            <p class="aside-info__subTitle">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+              <br><br>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
+            </p>
+            <div  class="aside-info__link">
+              <a href="#">See how Fylo works <i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div>
+          </div>
+        </aside>
+      </div>
       <section></section>
     </main>
 
-<!-- Testinomials -->
 
-  
-  <div class="container pt-5">
-      <section class="testimonial  row row-gap-sm-2 justify-content-between">
 
+<!-- #### Testinomials #### -->
+  <div class="testimonials">
+      <section class="testimonial row p-0 justify-content-center container m-auto">
+        <!-- Testimonial 1 -->
         <div class="testimonial-box shadow  col-md-3">
-          
           <p class="testimonial-box__text">Fylo has improvedD our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-          <p class="textimonial-box__name">Satish Patel Founder & CEO, Huddlee</p>
+            <div class="testimonial-box__profile row justify-content-start">
+              <img src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372522/profile-1_idekwt.jpg"
+              class="col" alt="Profile1">
+                <div class="testimonial-box__Profile1 col">
+                  <p class="testimonial-box__name">Satish Patel</p>
+                  <p class="testimonial-box__jobTitle">Founder & CEO, Huddlee</p>
+                </div>
+            </div>
         </div>
 
-        <div class="testimonial-box shadow col-md-3 ">
-          <p class="testimonial-box__text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-          <p class="textimonial-box__name">Bruce McKenzie Founder & CEO, Huddle</p>
+        <!-- Testimonial 2  -->
+        <div class="testimonial-box shadow  col-md-3">
+          <p class="testimonial-box__text">Fylo has improvedD our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="testimonial-box__profile row justify-content-start">
+              <img src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372522/profile-2_y994tw.jpg"
+              class="col" alt="Profile1">
+                <div class="testimonial-box__Profile1 col">
+                  <p class="testimonial-box__name">Bruce McKenzie</p>
+                  <p class="testimonial-box__jobTitle">Founder & CEO, Huddlee</p>
+                </div>
+            </div>
         </div>
-        
-        <div class="testimonial-box shadow col-md-3 ">
-          <p class="testimonial-box__text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-          <p class="testimonial-box__name">Iva Boyd <br><span class="testimonial-box__title">Founder & CEO, Huddle</span></p>
+
+        <!-- Testimonial 3  -->
+        <div class="testimonial-box shadow  col-md-3">
+          <p class="testimonial-box__text">Fylo has improvedD our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="testimonial-box__profile row justify-content-start">
+              <img src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372522/profile-3_crthcc.jpg"
+              class="col" alt="Profile1">
+                <div class="testimonial-box__Profile1 col">
+                  <p class="testimonial-box__name">Iva Boyd</p>
+                  <p class="testimonial-box__jobTitle">Founder & CEO, Huddlee</p>
+                </div>
+            </div>
         </div>
       </section>
   </div>
@@ -160,7 +186,6 @@
     questions, our support team would be happy to help you. Get Started For Free
  -->
     <footer class="mt-5 container">
-      <section>Earli access</section>
      <section class="footer-info">
       <div><img src="https://res.cloudinary.com/dymsokiwr/image/upload/v1723372522/logo_ytn80i.svg" alt=""></div>
       <div class="row p-2">
