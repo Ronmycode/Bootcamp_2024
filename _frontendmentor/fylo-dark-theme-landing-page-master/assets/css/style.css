@@ -1,0 +1,101 @@
+:root {
+  /* #### Main Colors #### */
+  /* (intro and email sign up background): */
+  --resetColor: hsl(200, 26%, 15%);
+  --DarkBlue1: hsl(217, 28%, 15%);
+
+  /* (main background) */
+  --DarkBlue2: hsl(218, 28%, 13%);
+
+  /* (footer background) */
+  --DarkBlue3: hsl(216, 53%, 9%);
+
+  /* testimonials background */
+  --DarkBlue4: hsl(219, 30%, 18%);
+
+  /* #### Accent Colors #### */
+  --Cyan: hsl(176, 68%, 64%);
+  --Blue: hsl(198, 60%, 50%);
+  --LightRed: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --Font1: "Raleway", sans-serif;
+  --Font2: "Open Sans", sans-serif;
+}
+* {
+  padding: 0;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  /*  border: solid 2px red; */
+}
+
+body {
+  background-color: var(--DarkBlue1) !important;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-position-y: bottom;
+  background-image: url("https://res.cloudinary.com/dymsokiwr/image/upload/v1723372519/bg-curvy-mobile_j6tk63.svg");
+}
+
+/* #### Nav Bar #### */
+nav a {
+  color: var(--white) !important;
+
+  font-family: var(--Font1);
+}
+nav img {
+  max-width: 6rem;
+}
+
+/* #### Hero #### */
+
+header {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-position-y: center;
+  background-image: url("https://res.cloudinary.com/dymsokiwr/image/upload/v1723372519/bg-curvy-mobile_j6tk63.svg");
+}
+header .header-img img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
+.header-text__title {
+  /* background-color: var(--DarkBlue2); */
+  font-family: var(--Font1);
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.header-text__subTitle {
+  font-family: var(--Font2);
+  font-size: 1.3rem;
+}
+.header-text__button {
+  width: 70%;
+  border-radius: 50px !important;
+  background-color: var(--Cyan) !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+
+/* Article section 2 */
+article img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
+
+.testimonial-box {
+  background-color: var(--DarkBlue4);
+  margin-bottom: 1.5rem;
+}
+/* challenge code */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
