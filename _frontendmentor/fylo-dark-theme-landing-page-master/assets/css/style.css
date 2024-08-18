@@ -170,13 +170,14 @@ main {
 /* #### testimonials #### */
 .testimonials {
   background-color: var(--DarkBlue2);
+  padding: 3rem 2rem;
 }
 .testimonial-box {
   background-color: var(--DarkBlue4);
-  margin: 1rem;
-  padding: 2rem 3rem !important;
+  padding: 2rem 2rem !important;
   font-size: 1rem;
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .testimonial-box img {
