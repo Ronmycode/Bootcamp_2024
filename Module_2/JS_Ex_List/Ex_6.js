@@ -10,16 +10,16 @@ let origen = "Palma",
   panchimalco = "10% Off",
   puertoDelTriunfo = "15% Off";
 
-const destino = [Palma, Panchimalco, "puerto"];
+let Palma, costa, Panchimalco, puerto;
 
 function desc_calc(origen, destino) {
   // calcular descuento
-  if (origen === "Palma") {
+  if (origen === Palma) {
     if (destino === costa) {
       console.log(`Su descuento es de: ${costaDelSol}`);
-    } else if (destino === "Panchimalco") {
+    } else if (destino === Panchimalco) {
       console.log(`Su descuento es de: ${panchimalco}`);
-    } else if (destino === "Puerto") {
+    } else if (destino === Puerto) {
       console.log(`Su descuento es de: ${puertoDelTriunfo}`);
     }
   } else {
@@ -28,9 +28,3 @@ function desc_calc(origen, destino) {
 }
 
 desc_calc(Palma, costa);
-
-// presentar datos
-/*  console.log(
-    `\nNombre: ${item.nombre}\nSalario: $${item.salario}\nCategoria: ${item.categoria}\nAumento: ${aumento}`
-  );
- */
