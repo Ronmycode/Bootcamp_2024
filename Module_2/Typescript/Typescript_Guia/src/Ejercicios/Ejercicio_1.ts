@@ -7,21 +7,27 @@ class CabeceraPagina {
   titulo: string = "";
   color: string = "";
   fuente: string = "";
+  alineado: string = "";
 
+  /* Metodo 1 */
   obtenerPropiedades(
     titulo_parametro: string,
     color_parametro: string,
     fuente_parametro: string
   ) {
     return {
-      titulo_parametro: this.titulo,
-      color_parametro: this.titulo,
-      fuente_parametro: this.fuente,
+      titulo: titulo_parametro,
+      color: color_parametro,
+      fuente: fuente_parametro,
     };
   }
+
+  /* Metodo 2 */
 }
 
+/* inicializando las cariables */
 let cabecera = new CabeceraPagina();
+/* ejecucion metodo 1 */
 let detalle = cabecera.obtenerPropiedades(
   "titulo de cabecera",
   "rojo",
