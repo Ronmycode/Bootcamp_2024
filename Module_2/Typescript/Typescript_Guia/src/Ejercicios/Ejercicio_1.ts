@@ -4,17 +4,28 @@ como desea que aparezca el título si centrado, derecha o izquierda y el tercer 
 que imprima todas las propiedades */
 
 class CabeceraPagina {
-  titulo: string;
-  color: string;
-  fuente: string;
+  titulo: string = "";
+  color: string = "";
+  fuente: string = "";
 
-  obtenerPropiedades(titulo, clr: string, fuente): { color: string } {
-    return [(color = clr)];
+  obtenerPropiedades(
+    titulo_parametro: string,
+    color_parametro: string,
+    fuente_parametro: string
+  ) {
+    return {
+      titulo_parametro: this.titulo,
+      color_parametro: this.titulo,
+      fuente_parametro: this.fuente,
+    };
   }
 }
 
 let cabecera = new CabeceraPagina();
+let detalle = cabecera.obtenerPropiedades(
+  "titulo de cabecera",
+  "rojo",
+  "arial"
+);
 
-cabecera.titulo = "titulo de cabecera";
-
-console.log(cabecera.titulo);
+console.log(detalle);
