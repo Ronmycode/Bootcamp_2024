@@ -47,6 +47,10 @@ class CabeceraPagina {
 }
 
 /* ejecucion metodo 1 */
+console.log(`
+####################################################
+################## Ejercicio # 1  ##################
+####################################################`);
 const cabecera = new CabeceraPagina("Cabecera", "rojo", "Arial", "centro");
 let detalle = cabecera.obtenerPropiedades();
 let alineado = cabecera.establecerAlineacion("izquierda");
