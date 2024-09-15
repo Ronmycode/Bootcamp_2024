@@ -7,31 +7,48 @@ class CabeceraPagina {
   titulo: string = "";
   color: string = "";
   fuente: string = "";
-  alineado: string = "";
+  alineacion: "izquierda" | "centro" | "derecha";
+
+  /* inicializando las cariables */
+  constructor(
+    titulo: string,
+    color: string,
+    fuente: string,
+    alineacion: "izquierda" | "centro" | "derecha"
+  ) {
+    this.titulo = titulo;
+    this.color = color;
+    this.fuente = fuente;
+    this.alineacion = alineacion;
+  }
 
   /* Metodo 1 */
-  obtenerPropiedades(
-    titulo_parametro: string,
-    color_parametro: string,
-    fuente_parametro: string
-  ) {
+  obtenerPropiedades() {
     return {
-      titulo: titulo_parametro,
-      color: color_parametro,
-      fuente: fuente_parametro,
+      titulo: this.titulo,
+      color: this.color,
+      fuente: this.fuente,
     };
   }
 
   /* Metodo 2 */
+
+  establecerAlineacion(alineacionn: "izquierda" | "centro" | "derecha") {
+    return (this.alineacion = alineacionn);
+  }
+
+  /* Metodo 3 */
+  imprimirPropiedades() {
+    console.log(`Título: ${this.titulo}`);
+    console.log(`Color: ${this.color}`);
+    console.log(`Fuente: ${this.fuente}`);
+    console.log(`Alineación: ${this.alineacion}`);
+  }
 }
 
-/* inicializando las cariables */
-let cabecera = new CabeceraPagina();
 /* ejecucion metodo 1 */
-let detalle = cabecera.obtenerPropiedades(
-  "titulo de cabecera",
-  "rojo",
-  "arial"
-);
-
-console.log(detalle);
+const cabecera = new CabeceraPagina("Cabecera", "rojo", "Arial", "centro");
+let detalle = cabecera.obtenerPropiedades();
+let alineado = cabecera.establecerAlineacion("izquierda");
+cabecera.imprimirPropiedades();
+console.log(alineado, detalle);
